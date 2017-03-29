@@ -52,29 +52,34 @@ div {
     </nav>
  <body>
   <div class="wrapper">    
-<div>
-  <form action="#">
-    <label for="fname">Naam</label>
-    <input type="text" id="fname" name="naam" placeholder="Naam">
+<div id="mainform">
+			<h2>Contact</h2>
+			<!-- Required div starts here -->
+				<form id="form">
+				<h4>Hier kunt u contact opnemen met ons!</h4>
+				 <p id="returnmessage"></p><p  id="demo"></p>
+                                <label>Naam: <span>*</span></label>
+				<br/>
+				<input type="text" id="name" placeholder="Naam"/><br/>
+				<br/>
+				<label>Emailadres: <span>*</span></label>
+				<br/>
+				<input type="text" id="email" placeholder="Emailadres"/><br/>
+				<br/>
+				<label>Telefoonnummer: <span>*</span></label>
+				<br/>
+                                <input type="text" id="contact" placeholder="Telefoonnummer"/><br/>
+				<br/>
+				<label>Bericht:</label>
+				<br/>				
+                                <textarea id="message" placeholder="Bericht......."></textarea><br/>
+				<br/>
+				<input type="button" id="submit" value="Send Message"/>
+                                <br/>
+            	</form>
+		
 
-    <label for="lname">Emailadres</label>
-    <input type="text" id="lname" name="emailadres" placeholder="Emailadres">
-
-    <label for="lname">telefoonnummer</label>
-    <input type="text" id="lname" name="telefoonnummer" placeholder="Telefoonnummer">
-      
-    <label for="lname">Onderwerp</label>
-    <input type="text" id="lname" name="onderwerp" placeholder="Onderwerp">
-    
-    <label for="lname">Website</label>
-    <input type="text" id="lname" name="website" placeholder="Website">
-      
-    <label for="lname">Bericht</label>
-    <textarea type="text" id="lname" rows="8" placeholder="Bericht"></textarea>
-  
-    <input type="submit" value="Verzenden">
-  </form>
-</div>
+		</div>
        </div> 
       <div class="footer">
           <div class="col1"><h3>Social media</h3>
