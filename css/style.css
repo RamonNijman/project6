@@ -55,8 +55,45 @@
 .webhosting{
     text-align: center;
     width: 100%;
-    height: 1000px;
+    height: 500px;
     background-color: greenyellow;
+}
+
+.pakket .button p{
+    padding-top: 5px;
+}
+
+.pakket .button{
+    margin-left: 19%;
+    width: 60%;
+    height: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 210px;
+}
+
+.pakket .bar p{
+    padding-top: 15px;
+    margin-top: 0px;
+}
+
+.pakket .bar{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.pakket{
+    height: 300px;
+    width: 275px;
+    float: left;
+    margin: 2%;
+    margin-left: 3%;
+    background-color: aqua;
+    border-radius: 5px 5px 5px 5px;
 }
 
 #recencies{
