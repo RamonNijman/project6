@@ -56,6 +56,40 @@
     text-align: center;
     width: 100%;
     height: 1000px;
+    background-color: greenyellow;
+}
+
+#recencies{
+    padding-top: 70px;
+}
+
+.recencies{
+    text-align: center;
+    width: 100%;
+    height: 1000px;
+    background-color: deepskyblue;
+}
+
+#cloud{
+    padding-top: 70px;
+}
+
+.cloud{
+    text-align: center;
+    width: 100%;
+    height: 1000px;
+    background-color: coral;
+}
+
+#contact{
+    padding-top: 70px;
+}
+
+.contact{
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    background-color: brown;
 }
 
 body {
