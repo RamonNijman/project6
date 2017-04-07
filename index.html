@@ -1,115 +1,67 @@
 <!DOCTYPE html>
 <html >
 <head>
-  <meta charset="UTF-8">
-  <title>Home</title>
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>Home</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="/lib/w3.css">
-    <style>
-.mySlides {display:none}
-.demo {cursor:pointer;border-radius: 10px 10px 10px 10px;}
-</style>
 </head>
-
 <body>
+
+    <div id="top"></div>
     <nav>
       <a href="#" class="logo">Colicss</a>
-      <input type="checkbox" id="nav" /><label for="nav"></label>
       <ul>
-        <li id="first"><a href="index.html">Home</a></li>
-        <li id="first"><a href="over.html">Over ons</a></li>
-        <li id="first"><a href="webhosting.html">Webhosting</a></li>
-        <li id="first"><a href="cloud.html">Cloud</a></li>
+        <li id="first"><a class="selected" href="#top">Home</a></li>
+        <li id="second"><a href="#overons">Over ons</a></li>
+        <li id="third"><a href="#webhosting">Webhosting</a></li>
+        <li id="four"><a href="cloud.html">Cloud</a></li>
+        <li id="five"><a href="recencies.html">Recencies</a></li>
         <li id="last"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-       <div class="wrapper">
-      <div class="slider" height="500">
+    
+    <div class="slider">
+        <div id="title">Welkom bij Colicss</div>
+        <img class="Slides slidetop" src="img/cisco.jpg">
+        <img class="Slides slidebottom" src="img/datacenter-servers-3840x2160-006.jpg">
+        <img class="Slides slidetop" src="img/google_data_center_wallpaper_013.jpg"
+    </div>
+    
+    <div class="wrapper">
+        <div id="overons">
+            <div id="info1">Colicss voor webhosting en cloud opslag</div>
+            <div id="info2"><p>Colicss is een innovatief en vernieuwend bedrijf uit Slagharen dat zich vooral bezig houdt met hosting en sinds kort ook de Cloud. Het bedrijf gaat onder leiding van Wilco Beltman al een poos flink voor de wind en zijn binnen twee jaar gegroeid van een eenmanszaak naar een bedrijf met zes man personeel.</p>
+
+            <p>Onlangs hebben ze nog een prijs gewonnen voor beste innovatie binnen de hosting door samen te werken met het Alfa-college. In dit project hebben studenten van het Alfa-college een hostingomgeving opgezet met daarop een testwebsite. Het panel van deze prijs vond de samenwerking zo gaaf, dat ze de prijs beste innovatie hebben gewonnen.</p>
+            </div>
+        </div>
         
-        <img class="mySlides w3-animate-fading" src="img/datacenter-servers-3840x2160-006.jpg" width="1000" height="345">
-        <img class="mySlides w3-animate-fading" src="img/data_center_server_room_colorful_technology_hogh_contrast_hd-wallpaper-1055246-1000x400.jpg" width="1000" height="345">
-        <img class="mySlides w3-animate-fading" src="img/google_data_center_wallpaper_013.jpg" width="1000" height="345">
-        <img class="mySlides w3-animate-fading" src="img/cisco.jpg" width="1000" height="345"> 
+        <div id="webhosting" class="webhosting">
+            <h2>Webhosting</h2>
+            <h2>Webhosting</h2>
+            <h2>Webhosting</h2>
+        </div>
+        
+    </div>
     
-        <div id="item">
-        <div class="w3-col s4">
-                <img class="demo w3-opacity w3-hover-opacity-off" src="img/datacenter-servers-3840x2160-006.jpg" width="200" height="75" onclick="currentDiv(1)">
-        </div>
-        <div class="w3-col s4">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="img/data_center_server_room_colorful_technology_hogh_contrast_hd-wallpaper-1055246-1000x400.jpg" width="200" height="75" onclick="currentDiv(2)">
-        </div>
-        <div class="w3-col s4">
-                <img class="demo w3-opacity w3-hover-opacity-off" src="img/google_data_center_wallpaper_013.jpg" width="200" height="75" onclick="currentDiv(3)">
-        </div>
-        <div class="w3-col s4">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="img/cisco.jpg" width="200" height="75" onclick="currentDiv(4)">
-        </div>
-        </div>
-      </div>
-    
-      <div class="footer">
-          <div class="col1"><h3>Social media</h3>
-            <p><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></p>
-            <p><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-3x"></i></a></p>
-            <p><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-3x"></i></a></p>
-          </div>
-          <div class="col2"><h3>Sitemap</h3>
-            <p><a href="contact.html">Contact</a></p>
-            <p><a href="index.html">Home </a></p>
-          </div>
-          <div class="col3"><h3>Contact</h3>
-            <p><a href="#">Mail: info@colicss.nl</a></p>
-            <p><a href="#">Tel: 06-12345678</a></p>
-          </div>
-      </div>
-  
-     
-    
-          <script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
-}
-</script>
 <script>
 var myIndex = 0;
 carousel();
 
 function carousel() {
     var i;
-    var x = document.getElementsByClassName("mySlides w3-animate-fading");
+    var x = document.getElementsByClassName("Slides");
     for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
+      x[i].style.display = "none";  
     }
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 4000);    
 }
-</script>
+
+    
+</script>           
 </body>
 </html>
