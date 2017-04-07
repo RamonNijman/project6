@@ -2,8 +2,12 @@
    font-family: myFont;
    src: url(../fonts/Antaris_ST_CF.otf);
 }
-@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
-@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatebottom{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+@keyframes animatetop{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+.anchor{
+    padding-top 90px;
+}
 
 #title{
     top: 400px;
@@ -44,10 +48,14 @@
     z-index: 4;
 }
 
+#webhosting{
+    padding-top: 70px;
+}
+
 .webhosting{
+    text-align: center;
     width: 100%;
     height: 1000px;
-    background-color: aqua;
 }
 
 body {
@@ -121,7 +129,7 @@ nav a {
 
 #overons{
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 90px;
     width: 80%; 
     height: 400px;
 }
