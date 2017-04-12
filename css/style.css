@@ -1,9 +1,10 @@
 @font-face {
    font-family: myFont;
-   src: url(../fonts/Antaris_ST_CF.otf);
+   src: url(../fonts/Warlow_Sans.otf);
 }
 @keyframes animatebottom{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 @keyframes animatetop{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+@keyframes animateleft{from{left:-300px;opacity:0} to{left:300;opacity:1}}
 
 .anchor{
     padding-top 90px;
@@ -55,8 +56,7 @@
 .webhosting{
     text-align: center;
     width: 100%;
-    height: 500px;
-    background-color: greenyellow;
+    height: 650px;
 }
 
 .pakket .button p{
@@ -70,7 +70,7 @@
     color: white;
     background-color: black;
     border-radius: 5px 5px 5px 5px;
-    margin-top: 210px;
+    margin-top: 10%;
 }
 
 .pakket .bar p{
@@ -86,12 +86,24 @@
     border-radius: 5px 5px 0px 0px;
 }
 
+.pakket .price p{
+    padding-top: 15px;
+    margin-top: 0px;
+}
+
+.pakket .price{
+    width: 100%;
+    height: 30px;
+    color: white;
+    background-color: black;
+    margin-top: -10px;
+}
+
 .pakket{
-    height: 300px;
-    width: 275px;
+    height: 525px;
+    width: 300px;
     float: left;
-    margin: 2%;
-    margin-left: 3%;
+    margin-left: 2%;
     background-color: aqua;
     border-radius: 5px 5px 5px 5px;
 }
@@ -114,8 +126,7 @@
 .cloud{
     text-align: center;
     width: 100%;
-    height: 1000px;
-    background-color: coral;
+    height: 700px;
 }
 
 #contact{
@@ -130,7 +141,7 @@
 }
 
 body {
-    background: silver;
+    background: #e5e5e5;
     margin: 0 auto;
     width: 100%;
     font-family: myFont;
@@ -144,10 +155,10 @@ body {
 .logo {
     text-decoration: none;
     color: #000;
-    font-size: 300%;
+    font-size: 400%;
     float: left;
     padding-left: 20px;
-    padding-top: 10px;
+    margin-top: -10px;
 }
 
 nav {
@@ -167,7 +178,7 @@ nav ul {
 nav ul li {
   	text-align: center;
     line-height: 40px;
-    margin-left: 30px;
+    margin-left: 20px;
     padding-right: 20px;
 }
 
@@ -207,20 +218,21 @@ nav a {
 
 #info1{
     position: absolute;
-    padding-top: 100px;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    margin-left: -20px;
     text-align: center;
-    font-size: 200%;
-    background-color: crimson;
+    font-size: 190%;
     width: 200px;
     height: 300px;
     z-index: 9999;
+    animation:animateleft 3s;
 }
 #info2{
     position: absolute;
     padding-top: 60px;
     text-align: left;
-    margin-left: 200px;
-    background-color: forestgreen;
+    margin-left: 220px;
     width: 585px;
     height: 340px;
     z-index: 8888;
