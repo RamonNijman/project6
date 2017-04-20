@@ -158,43 +158,34 @@
         
         <div id="recencies" class="recencies">
             <h2>Recencies</h2>
-            <div id="recencie">
-                <img src="img/3-star.png" width='150'>
+            <div id="recencie" class="recencie slidetop">
+                <img src="img/5-star.png" width='150'>
                 <h3>Perfect</h3>
-                <p>orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-                <h4>~ NAME</h4>
+                <p>De hosting is zeer degelijk en de support is perfect. Ze helpen je zelfs gratis met kleine problemen van u website. Echt een aanrader voor ieder die een eigen website heeft! Ook heb ik sinds kort bij Colicss cloud aangeschaft, zeer snelle verbinding en voldoende back-ups.  Kortom: goede service en stukken voordiger wanneer je ook voor cloud hosting kiest!</p>
+                <h4>~ Jorian Kiela</h4>
             </div>
-        </div>
-        
-        <div id="contact" class="contact">
-            <h2>Contact</h2>
-                <form action="#">
-                <input type="text" placeholder="Naam">
-                <input type="text" placeholder="Emailadres">
-                <input type="text" placeholder="Telefoonnumer">
-                <input type="text" placeholder="Onderwerp">
-                <textarea type="text" rows="4" placeholder="Bericht"></textarea>
-                <input type="button" class="buttton" value="Verzenden">
-            </form>
+            <div id="recencie" class="recencie slidebottom">
+                <img src="img/4-star.png" width='150'>
+                <h3>Fantastisch</h3>
+                <p>Ik was, net als u, op zoek naar een betrouwbare en degelijke webhosting. Hoewel ik diverse bedrijven heb geprobeerd is Colicss mij het beste bevallen. In tegenstelling tot een webhost als Versio was ik binnen een paar uur al online en kon ik mijn website inrichten. Voor iedereen zit er wel een geschikt pakket tussen.</p>
+                <h4>~ Dion Grendelman</h4>
+            </div>
+            <div id="recencie" class="recencie slidetop">
+                <img src="img/3-star.png" width='150'>
+                <h3>Goed genoeg voor hobby</h3>
+                <p>Hosting raad ik niet aan voor zakelijk gebruik of voor grote websites, maar dat weerspiegelt zich ook in de prijs natuurlijk. Perfect doenbaar om een kleine hobby site op te hosten en hun platform is erg wendbaar.</p>
+                <h4>~ Koen Roosa</h4>
+            </div>
         </div>
         
     </div>
         
-    <footer>
-        <div id="tweets">
-            <a class="twitter-timeline"  href="https://twitter.com/hashtag/coliccs" data-widget-id="854622708507783168">Tweets over #coliccs</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
-        </div>
-        <div id="social">
-        </div>
-    </footer>
     
 <script>
 var myIndex = 0;
-carousel();
+slider();
 
-function carousel() {
+function slider() {
     var i;
     var x = document.getElementsByClassName("Slides");
     for (i = 0; i < x.length; i++) {
@@ -203,33 +194,85 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
+    setTimeout(slider, 4000);    
+}
+    
+var myIndex = 0;
+recencie();
+
+function recencie() {
+    var i;
+    var x = document.getElementsByClassName("recencie");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(recencie, 5000);    
 }
 
 $(document).ready(function(){
-  // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
       event.preventDefault();
-
-      // Store hash
+        
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
    
-        // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
+    }
   });
 });   
+    
+function formVal() {
+    var x = document.forms["Form"]["email"].value;
+    var at = x.indexOf("@");
+    var dot = x.lastIndexOf(".");
+    if (at<1 || dot<at+2 || dot+2>=x.length) {
+        alert("Geen geldig emailadres ingevoerd!");
+        return false;
+    }
+}
 </script>           
 </body>
+    <div id="contact" class="contact">
+        <h2>Contact</h2>
+        <div id="contactinfo">
+            <h3>Colicss</h3>
+            <p>Herenstraat 24</p>
+            <p>7776 AG, Slagharen</p>
+            <p>06-12412498</p>
+            <p>KVK: 05076893</p>
+        </div>
+        <div id="form">
+            <form  name="Form" action="#" onsubmit="return formVal();" method="post">
+                <input id="naam" type="text" placeholder="Naam">
+                <input id="email" type="text" placeholder="Emailadres">
+                <input id="tel" type="text" placeholder="Telefoonnumer">
+                <input id="onderwerp" type="text" placeholder="Onderwerp">
+                <textarea id="bericht" type="text" rows="4" placeholder="Bericht"></textarea>
+                <button formaction="#top" class="buttton button3">verzenden</button>
+            </form>
+        </div>
+        <div id="tweets">
+            <a class="twitter-timeline"  href="https://twitter.com/hashtag/colicss" data-widget-id="854692998956949504">Tweets over #colicss</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+            </script>
+            </div>
+        </div>
+    
+        <footer>
+        <div class="copyright">© 2017 colicss.nl</div>
+        <div class="social">
+            <a href="#"><i class="fa fa-twitter fa-3x"></i></a>
+            <a href="#"><i class="fa fa-facebook fa-3x"></i></a>
+            <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
+        </div>
+    </footer>
 </html>

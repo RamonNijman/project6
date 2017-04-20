@@ -213,11 +213,45 @@ hr{
 .contact form{
     padding-top: 40px;
     background-color: rgb(214, 214, 214);
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+    float: left;
 }
 
+.contact #form{
+    width: 50%;
+    float: left;
+}
+
+.contact #contactinfo{
+    width: 330px;
+    height: 100%;
+    padding-top: 40px;
+    padding-left: 40px;
+    float: left;
+    background-color: rgb(214, 214, 214);
+}
+
+.contact #contactinfo p{
+    z-index: 999999999;
+}
+
+#tweets{
+    width: 290px;
+    height: 350px;
+    background-color: rgb(214, 214, 214);
+    padding: 30px;
+    padding-top: 40px;
+    float: right;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.twitter-timeline{
+    height: 270px;
+}
+
+
 input[type=text] {
-    width: 90%;
+    width: 70%;
     padding: 12px 20px;
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -225,7 +259,7 @@ input[type=text] {
 }
 
 textarea[type=text] {
-    width: 90%;
+    width: 70%;
     padding: 12px 20px;
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -302,26 +336,40 @@ nav a {
 
 footer{
     width: 100%;
-    height: 80px;
+    height: 70px;
     position: absolute;
     background-color: white;
     margin-top: 40px;
 }
 
-.twitter-timeline{
-    margin-left: 30px;
+.copyright{
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
 }
 
+.social{
+    margin-top: 15px;
+    margin-right: 20px;
+    float: right
+}
+
+.social i{
+    margin-left: 10px;
+    color: black;
+}
+
+.button3 {font-size: 16px;}
+
 .buttton {
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Green */
+    width: 70%;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    margin-bottom: 20px;
+    margin: 10px 2px;
     cursor: pointer;
 }
