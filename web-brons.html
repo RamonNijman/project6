@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Webhosting | Brons</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    
+    <nav>
+      <a href="#" class="logo">Colicss</a>
+      <ul>
+        <li id="first"><a href="index.html">Home</a></li>
+        <li id="first"><a href="index.html#overons">Over ons</a></li>
+        <li id="first"><a href="index.html#webhosting">Webhosting</a></li>
+        <li id="first"><a href="index.html#cloud">Cloud</a></li>
+        <li id="first"><a href="index.html#recencies">Recencies</a></li>
+        <li id="last"><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <div class="wrapper">
+        <div id="brons">
+            <h2>Webhosting Brons</h2>
+            <br>
+            <p>Schijfruimte: 10GB</p> 
+            <p>Dataverkeer: 100GB</p>
+            <br>
+            <div id="specs">
+                <h3>Inbegrepen:</h3>
+                <ul>
+                    <li>10GB schijfruimte</li>
+                    <li>100GB dataverkeer</li>
+                    <li>512MB RAM</li>
+                    <li>1 CPU core</li>
+                    <li>MySQl Databae</li>
+                    <li>FTP Toegang</li>
+                    <li>Dagelijks backup</li>
+                </ul>
+            </div>
+            <div id="specs">
+                <h3>Looptijd:</h3>
+                    <div class="styled-select slate">
+                    <select id="looptijd" onchange="myFunction()">
+                        <option value="1">Per maand (€ 5,95)</option>
+                        <option value="2">Per jaar (€ 71,40)</option>
+                        <option value="3">Per 5 jaar (€ 357,00)</option>
+                    </select>
+                    </div>
+            </div>
+            <div id="specs">
+                <h3>Prijs:</h3>
+                    <div id="prijs">Per maand (€ 5,95)</div>
+            </div>
+        </div>
+    </div>
+    
+    <footer style="bottom:0">
+        <div class="copyright">© 2017 colicss.nl</div>
+        <div class="social">
+            <a href="https://twitter.com/?lang=nl" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+            <a href="#https://nl-nl.facebook.com/" target="_blank"><i class="fa fa-facebook fa-3x"></i></a>
+            <a href="https://www.instagram.com/?hl=nl" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
+        </div>
+    </footer>
+    
+<script>
+function price() {
+    var x = document.getElementById("looptijd");
+    var i = x.selectedIndex;
+    document.getElementById("prijs").innerHTML = x.options[i].text;
+}
+</script>
+</body>
+</html>
