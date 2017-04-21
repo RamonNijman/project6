@@ -118,12 +118,15 @@
     margin-top: 10%;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 4px #343434;
+    box-shadow: 0 4px rgb(100, 99, 99);
 }
 
 
 .pakket .button:active {
-  transform: translateY(2px);
+    transform: translateY(2px);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px #000;
 }
 
 .pakket .bar p{

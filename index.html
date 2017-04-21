@@ -253,13 +253,13 @@ function formVal() {
             <p>KVK: 05076893</p>
         </div>
         <div id="form">
-            <form  name="Form" action="#" onsubmit="return formVal();" method="post">
-                <input id="naam" type="text" placeholder="Naam">
-                <input id="email" type="text" placeholder="Emailadres">
-                <input id="tel" type="text" placeholder="Telefoonnumer">
-                <input id="onderwerp" type="text" placeholder="Onderwerp">
-                <textarea id="bericht" type="text" rows="4" placeholder="Bericht"></textarea>
-                <button formaction="#top" class="buttton button3">verzenden</button>
+            <form  name="Form" action="contact.php" onsubmit="return formVal();" method="post">
+                <input id="naam" name="naam" type="text" placeholder="Naam" required>
+                <input id="email" name="email" type="text" placeholder="Emailadres" required>
+                <input id="tel" name="tel" type="text" placeholder="Telefoonnumer" required>
+                <input id="onderwerp" name="onderwerp" type="text" placeholder="Onderwerp" required>
+                <textarea id="bericht" name="bericht" type="text" rows="4" placeholder="Bericht" required></textarea>
+                <button class="buttton button3">verzenden</button>
             </form>
         </div>
         <div id="tweets">
